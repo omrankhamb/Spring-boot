@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+    <!--bean id = "orderService2" class = "org.example.OrderService"/-->
+<!--    <bean id ="paymentService"-->
+<!--          class = "org.example.Payment.PaymentService">-->
+<!--            <constructor-arg  index = "0" name="type" value = "UPI"/>-->
+<!--            <constructor-arg index = "1" name = "retryCount" value = "3"/>-->
+<!--    </bean>-->
+
+<!--    <bean id = "orderService"-->
+<!--          class = "org.example.OrderService">-->
+<!--        <property  name = "paymentService" ref = "paymentService"></property>-->
+
+<!--    </bean>-->
+
+
+<!--    <bean id = "orderService"-->
+<!--          class = "org.example.OrderService">-->
+<!--        <constructor-arg ref = "paymentService"></constructor-arg>-->
+<!--    </bean>-->
+
+
+<!--    <bean id = "upiPaymentService" class = "org.example.Payment.UPIPaymentService">-->
+
+<!--    </bean>-->
+
+<!--    <bean id = "cardPaymentService" class = "org.example.Payment.CardPaymentService">-->
+
+<!--    </bean>-->
+
+<!--    <bean id = "orderService" class = "org.example.OrderService"-->
+<!--    >-->
+<!--        <constructor-arg ref = "upiPaymentService">-->
+
+<!--        </constructor-arg>-->
+<!--    </bean>-->
+
+<!--    <bean id="userService" class="org.example.UserService"-->
+<!--    >-->
+<!--        <constructor-arg name = "usernames">-->
+<!--            <list>-->
+<!--                <value>Aditya</value>-->
+<!--                <value>Omprasad</value>-->
+<!--                <value>Soham</value>-->
+
+<!--            </list>-->
+<!--        </constructor-arg>-->
+
+
+<!--    </bean>-->
+
+    <bean id = "userService"
+             class = "org.example.UserService"
+          init-method = "init"
+          scope = "prototype"
+          destroy-method = "cleanup"
+
+    >
+    </bean>
+
+</beans>
