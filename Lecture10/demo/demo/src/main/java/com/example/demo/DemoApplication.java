@@ -12,12 +12,10 @@ public class DemoApplication {
 
 
 		PaymentGateWay paymentGateWay = context.getBean(PaymentGateWay.class);
-		paymentGateWay.setType("Paytm");
-		paymentGateWay.setRetryCount(5);
+//		paymentGateWay.setType("Paytm");
+//		paymentGateWay.setRetryCount(5);
 
 
-		System.out.println(paymentGateWay.getRetryCount());
-		System.out.println(paymentGateWay.getType());
 	}
 
 }
